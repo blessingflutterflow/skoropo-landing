@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Delete Account — Skoropo</title>
+    <meta name="description" content="Request the deletion of your Skoropo account and all associated personal data.">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Inter', sans-serif;
+            background: #fff;
+            color: #181D27;
+            line-height: 1.7;
+            display: flex;
+            flex-direction: column;
+            min-height: 100vh;
+        }
+
+        /* ── Nav ── */
+        .da-nav {
+            background: #fff;
+            border-bottom: 1px solid #eee;
+            padding: 0 40px;
+            height: 64px;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        }
+
+        .da-nav__logo {
+            font-size: 18px;
+            font-weight: 700;
+            color: #1a1410;
+            text-decoration: none;
+            letter-spacing: -0.3px;
+        }
+
+        .da-nav__back {
+            font-size: 14px;
+            color: #535862;
+            text-decoration: none;
+        }
+
+        /* ── Content ── */
+        .da-wrap {
+            max-width: 600px;
+            margin: 80px auto;
+            padding: 0 24px;
+            text-align: center;
+            flex: 1;
+        }
+
+        .da-wrap h1 {
+            font-size: 32px;
+            font-weight: 700;
+            margin-bottom: 16px;
+            color: #181D27;
+        }
+
+        .da-wrap p {
+            font-size: 16px;
+            color: #535862;
+            margin-bottom: 32px;
+        }
+
+        .da-card {
+            background: #f9fafb;
+            border: 1px solid #eaecf0;
+            border-radius: 16px;
+            padding: 32px;
+            text-align: left;
+        }
+
+        .da-card h2 {
+            font-size: 18px;
+            font-weight: 600;
+            margin-bottom: 12px;
+        }
+
+        .da-card ul {
+            padding-left: 20px;
+            margin-bottom: 24px;
+        }
+
+        .da-card ul li {
+            font-size: 14px;
+            color: #3d4451;
+            margin-bottom: 8px;
+        }
+
+        .da-btn {
+            display: inline-block;
+            background: #181D27;
+            color: #fff;
+            padding: 12px 24px;
+            border-radius: 8px;
+            text-decoration: none;
+            font-weight: 600;
+            font-size: 15px;
+            transition: background 0.2s;
+            width: 100%;
+            text-align: center;
+        }
+
+        .da-btn:hover {
+            background: #000;
+        }
+
+        .da-footer {
+            text-align: center;
+            padding: 32px 24px;
+            font-size: 13px;
+            color: #535862;
+            border-top: 1px solid #eee;
+        }
+
+        @media (max-width: 600px) {
+            .da-nav { padding: 0 20px; }
+            .da-wrap { margin: 40px auto; }
+        }
+    </style>
+</head>
+
+<body>
+    <nav class="da-nav">
+        <a href="index.html" class="da-nav__logo">Skoropo</a>
+        <a href="index.html" class="da-nav__back">← Home</a>
+    </nav>
+
+    <main class="da-wrap">
+        <h1>Account Deletion</h1>
+        <p>We're sorry to see you go. If you request deletion, your account and all associated data will be permanently removed.</p>
+
+        <div class="da-card">
+            <h2>What will be deleted?</h2>
+            <ul>
+                <li>Your profile information (name, email, phone).</li>
+                <li>Your profile photo and identification documents.</li>
+                <li>Your booking history (excluding financial records required for compliance).</li>
+                <li>Your chat history and ratings.</li>
+            </ul>
+
+            <a href="mailto:support@skoropo.app?subject=Account Deletion Request&body=I would like to request the deletion of my Skoropo account and all associated data.%0D%0A%0D%0AMy registered email: [Your Email Here]%0D%0AMy registered phone: [Your Phone Here]" class="da-btn">
+                Request Account Deletion
+            </a>
+            <p style="font-size: 12px; margin-top: 16px; margin-bottom: 0; text-align: center;">
+                Our team will process your request within 48 hours.
+            </p>
+        </div>
+    </main>
+
+    <footer class="da-footer">
+        &copy; 2025 Skoropo. All rights reserved.
+    </footer>
+</body>
+
+</html>
